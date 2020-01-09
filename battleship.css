@@ -1,0 +1,90 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div#board {
+    width: 800px;
+    height: 800px;
+    background: url("resources/board.png") no-repeat;
+}
+
+table {
+    position: absolute;
+    left: 108px;
+    top: 108px;
+    border-collapse: collapse;
+}
+
+td {
+    height: 100px;
+    width: 100px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.buttons {
+    height: 100px;
+    width:100px;
+    border: none;
+    background: none;
+}
+
+td:hover {
+    background: url("resources/target.png") no-repeat center center;
+}
+
+.hit {
+    background: url("resources/ship.png") no-repeat center center;
+}
+
+.miss {
+    background: url("resources/miss.png") no-repeat center center;
+}
+
+#guessInput {
+    visibility: hidden;
+}
+
+#fireButton {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: none;
+    border: none;
+}
+
+#messageArea {
+    font-size: 23px;
+    font-family: Arial;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+#timeArea {
+    font-size: 15px;
+    font-family: Arial;
+    font-weight: bold;
+    width: 800px;
+    height: 25px;
+    position: absolute;
+}
+
+#restart{
+    position: absolute;
+    top: 720px;
+    left: 608px;
+    width: 100px;
+}
+
+#display{
+    position: absolute;
+    top: 706px;
+    left: 508px;
+}
+
+#leaderboardArea{
+    position: absolute;
+    top: 720px;
+    margin-left: 100px;
+}

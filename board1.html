@@ -1,0 +1,77 @@
+﻿<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Battleships</title>
+        <link rel="stylesheet" href="battleship.css">
+    </head>
+    <body>
+        <div id="board">
+            <div id="messageArea"></div>
+            <div id="timerArea">
+                <p id="display">00 : 00 . 000</p>
+                <button id="restart">Restart</button>
+            </div>
+
+            <table>
+                <tr>
+                    <td id="00"><button class="buttons" id="btnA0" onclick="btnClick1(this.id)"></button></td>
+                    <td id="10"><button class="buttons" id="btnB0" onclick="btnClick1(this.id)"></button></td>
+                    <td id="20"><button class="buttons" id="btnC0" onclick="btnClick1(this.id)"></button></td>
+                    <td id="30"><button class="buttons" id="btnD0" onclick="btnClick1(this.id)"></button></td>
+                    <td id="40"><button class="buttons" id="btnE0" onclick="btnClick1(this.id)"></button></td>
+                    <td id="50"><button class="buttons" id="btnF0" onclick="btnClick1(this.id)"></button></td>
+                </tr>
+                <tr>
+                    <td id="01"><button class="buttons" id="btnA1" onclick="btnClick1(this.id)"></button></td>
+                    <td id="11"><button class="buttons" id="btnB1" onclick="btnClick1(this.id)"></button></td>
+                    <td id="21"><button class="buttons" id="btnC1" onclick="btnClick1(this.id)"></button></td>
+                    <td id="31"><button class="buttons" id="btnD1" onclick="btnClick1(this.id)"></button></td>
+                    <td id="41"><button class="buttons" id="btnE1" onclick="btnClick1(this.id)"></button></td>
+                    <td id="51"><button class="buttons" id="btnF1" onclick="btnClick1(this.id)"></button></td>
+                </tr>
+                <tr>
+                    <td id="02"><button class="buttons" id="btnA2" onclick="btnClick1(this.id)"></button></td>
+                    <td id="12"><button class="buttons" id="btnB2" onclick="btnClick1(this.id)"></button></td>
+                    <td id="22"><button class="buttons" id="btnC2" onclick="btnClick1(this.id)"></button></td>
+                    <td id="32"><button class="buttons" id="btnD2" onclick="btnClick1(this.id)"></button></td>
+                    <td id="42"><button class="buttons" id="btnE2" onclick="btnClick1(this.id)"></button></td>
+                    <td id="52"><button class="buttons" id="btnF2" onclick="btnClick1(this.id)"></button></td>
+                </tr>
+                <tr>
+                    <td id="03"><button class="buttons" id="btnA3" onclick="btnClick1(this.id)"></button></td>
+                    <td id="13"><button class="buttons" id="btnB3" onclick="btnClick1(this.id)"></button></td>
+                    <td id="23"><button class="buttons" id="btnC3" onclick="btnClick1(this.id)"></button></td>
+                    <td id="33"><button class="buttons" id="btnD3" onclick="btnClick1(this.id)"></button></td>
+                    <td id="43"><button class="buttons" id="btnE3" onclick="btnClick1(this.id)"></button></td>
+                    <td id="53"><button class="buttons" id="btnF3" onclick="btnClick1(this.id)"></button></td>
+                </tr>
+                <tr>
+                    <td id="04"><button class="buttons" id="btnA4" onclick="btnClick1(this.id)"></button></td>
+                    <td id="14"><button class="buttons" id="btnB4" onclick="btnClick1(this.id)"></button></td>
+                    <td id="24"><button class="buttons" id="btnC4" onclick="btnClick1(this.id)"></button></td>
+                    <td id="34"><button class="buttons" id="btnD4" onclick="btnClick1(this.id)"></button></td>
+                    <td id="44"><button class="buttons" id="btnE4" onclick="btnClick1(this.id)"></button></td>
+                    <td id="54"><button class="buttons" id="btnF4" onclick="btnClick1(this.id)"></button></td>
+                </tr>
+                <tr>
+                    <td id="05"><button class="buttons" id="btnA5" onclick="btnClick1(this.id)"></button></td>
+                    <td id="15"><button class="buttons" id="btnB5" onclick="btnClick1(this.id)"></button></td>
+                    <td id="25"><button class="buttons" id="btnC5" onclick="btnClick1(this.id)"></button></td>
+                    <td id="35"><button class="buttons" id="btnD5" onclick="btnClick1(this.id)"></button></td>
+                    <td id="45"><button class="buttons" id="btnE5" onclick="btnClick1(this.id)"></button></td>
+                    <td id="55"><button class="buttons" id="btnF5" onclick="btnClick1(this.id)"></button></td>
+                </tr>
+            </table>
+            <div id="leaderboardArea">Leaderboard:</div>
+            <form>
+                <input type="text" id="guessInput">
+                <input type="button" id="fireButton">
+            </form>
+            <!--<div id="win">
+            <img id="win" src="win.gif" height=349 width=480>
+        </div>-->
+        </div>
+        <script src="battleshipJS.js"></script>
+        <script src="timer.js"></script>
+    </body>
+</html>
