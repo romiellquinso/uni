@@ -14,5 +14,14 @@
     "git": "^0.1.5",
     "mime": "^2.4.4",
     "mongodb": "^3.4.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romiellquinso/uni.git"
+  },
+  "bugs": {
+    "url": "https://github.com/romiellquinso/uni/issues"
+  },
+  "homepage": "https://github.com/romiellquinso/uni#readme"
 }
