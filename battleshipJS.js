@@ -209,6 +209,18 @@ function init() {
 	model.generateShipLocations();
 }
 
+//when game ends, prompt name
+function promptName() {
+	var txt;
+	var player = prompt("Please enter your name:", "Ron");
+	if (player == null || player == "") {
+		player = "unknown player";
+	} else {
+		txt = "Congratulations, " + player + "! You won!";
+	}
+	document.getElementById("messageArea").innerHTML = txt;
+}
+
 function handleFireButton() {
 	var guessInput = document.getElementById("guessInput");
 	var guess = guessInput.value.toUpperCase();
@@ -224,6 +236,9 @@ function handleFireButton() {
 			toggleBtn[i].disabled = true;
 		}
 		console.log('input disabled');
+		promptName();
+		testScore(); // submits username and score
+		getScores(); // updates leaderboards
 	}
 }
 
@@ -249,8 +264,6 @@ function btnClick1(guess) {
 
 	document.getElementById("fireButton").click();
 }
-
-
 
 window.onload = init;
 

@@ -13,12 +13,16 @@
     "express": "^4.17.1",
     "git": "^0.1.5",
     "mime": "^2.4.4",
-    "mongodb": "^3.4.1"
+    "mongodb": "^3.4.1",
+    "requirejs": "^2.3.6"
   },
   "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/romiellquinso/uni.git"
+  },
+  "engines": {
+    "node": "v12.4.1"
   },
   "bugs": {
     "url": "https://github.com/romiellquinso/uni/issues"
