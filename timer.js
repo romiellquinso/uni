@@ -65,7 +65,7 @@ function Timer(elem) {
 		}
 	};
 
-	//runs when New Game is clicked
+	//runs when game is over
 	this.reset = function () {
 		time = 0;
 	};
