@@ -6,15 +6,30 @@ function getScores() {
 
     var raw = "";
 
-    var requestOptions = {
-        method: 'GET',
-        headers: myHeaders,
-        body: raw,
-        redirect: 'follow'
-    };
+    // var requestOptions = {
+    //     method: 'GET',
+    //     headers: myHeaders,
+    //     // body: raw,
+    //     redirect: 'follow'
+    // };
 
-    fetch("localhost:3000/players?lim=10", requestOptions)
+    fetch("localhost:3000/players?lim=10")
         .then(response => response.text())
         .then(result => console.log(result))
         .catch(error => console.log('error', error));
+}
+
+function getScores1(){
+    var settings = {
+        "url": "localhost:3000/players",
+        "method": "GET",
+        "timeout": 0,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+    };
+
+    $.ajax(settings).done(function (response) {
+        console.log(response);
+    });
 }

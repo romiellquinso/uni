@@ -207,6 +207,8 @@ function init() {
 	guessInput.onkeypress = handleKeyPress;
 
 	model.generateShipLocations();
+
+	getScores1();
 }
 
 //when game ends, prompt name
@@ -239,6 +241,7 @@ function handleFireButton() {
 		promptName();
 		testScore(); // submits username and score
 		getScores(); // updates leaderboards
+		testScore(); // test
 	}
 }
 
