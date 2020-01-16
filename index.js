@@ -3,14 +3,30 @@ const express = require("express");
 const bodyParser = require("body-parser");
 
 // create and configure the express app
-const PORT = process.env.PORT || 3000;
-const app = express();
-app.use(express.json());
-const MongoClient = require("mongodb").MongoClient;
+// const PORT = process.env.PORT || 3000;
+// const app = express();
+// app.use(express.json());
+// const MongoClient = require("mongodb").MongoClient;
 
-// Storing url taken from mongoDB
-const url = "mongodb+srv://admin:admin@cluster0-azyez.mongodb.net/test?retryWrites=true&w=majority";
-let db;
+// // Storing url taken from mongoDB
+// const url = "mongodb+srv://admin:admin@cluster0-azyez.mongodb.net/test?retryWrites=true&w=majority";
+// let db;
+const db = process.env.MONGODB_URL;
+
+const connectDB = async () => {
+    try {
+        await mongoose.connect(db, {
+            useUnifiedTopology: true,
+            useNewUrlParser: true
+        });
+        console.log("MongoDB is Connected...");
+    } catch (err) {
+        console.error(err.message);
+        process.exit(1);
+    }
+};
+
+
 
 // The index route
 app.get("/", function (req, res) {
